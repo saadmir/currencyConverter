@@ -1,0 +1,16 @@
+<div class="container-fluid" ng-controller="controller.activity as activityCtrl">
+  <h1>Activity</h1>
+  <div class="row" ng-repeat="transaction in activityCtrl.activity">
+    <div class="col-xs-2">
+      {{transaction.date}}
+    </div>
+    <div class="col-xs-2">
+      <a style="border: none" href="#" editable-select="transaction.currency" buttons="no" onbeforesave="convertAmount(transaction,$data)"
+        onshow="loadCurrencies()"
+        e-ng-options="s.code as s.symbol for (k, s) in currencies">
+        {{ transaction.currency }} <img height="14px" ng-src="{{ currencies[transaction.currency].image }}"></img>
+      </a>
+      <span>{{ transaction.amount }}</span>
+    </div>
+  </div>
+</div>

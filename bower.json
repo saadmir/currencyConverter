@@ -1,0 +1,11 @@
+{
+  "name": "currencyConverter",
+  "description": "angularjs frontend",
+  "version": "0.0.0",
+  "homepage": "https://github.com/saadmir/currencyConverter",
+  "license": "",
+  "private": true,
+  "dependencies": {
+    "angular-xeditable": "*"
+  }
+}
