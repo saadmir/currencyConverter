@@ -6,14 +6,14 @@ nodejs + angularjs demo
 
 * http://localhost:3000/
 
-* /currencyConversion/USD/MXN/100
-convert USD $100 to Mexican Pesos MXN $
+### convert USD $100 to Mexican Pesos MXN $
+##### http://localhost:3000/currencyConversion/USD/MXN/100
 
-* /conversionRate/USD/MXN/
-exchange rate for USD $ to MXN $
+### exchange rate for USD $ to MXN $
+#### http://localhost:3000/conversionRate/USD/MXN/
 
-* /currencies
-get list of all known currency codes, rates and images
+### get list of all known currency codes, rates and images
+#### http://localhost:3000/currencies
 
-* /refresh
-update all exchange rated from openexchangerates.org
+### update all exchange rated from openexchangerates.org
+#### http://localhost:3000/refresh
